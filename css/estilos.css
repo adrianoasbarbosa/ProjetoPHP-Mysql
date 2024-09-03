@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #d1eff4;
+    background-image: url('../imagem/fundo/kazuha.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    /*imagem fixa enquanto texto se movimenta*/
+}
+h3{
+    color: rgb(26, 65, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size:20pt;
+}
+p{
+    color: rgb(30, 62, 1);
+    font-family: arial;
+    font-size: 16pt;
+    text-align: center;
+}
+img{
+    width: 280px;
+    border: 1px solid black;
+}
+.topo{
+    background-size: cover;
+    width: 87%;
+    float:left;
+    padding: 2%;
+    background-color: antiquewhite;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 5%;
+}
+
+.topo-imagens{
+    background-size: cover;
+    width: 96%;
+    float:left;
+    padding: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-position-y: 200px;
+    image-orientation: flip;
+}
+.menu{
+    width: 20%;
+    float:left;
+    margin-right: 1%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.conteudo{
+    width: 70%;
+    float: right;
+    padding: 2%;
+    background:rgb(83, 171, 145);
+    margin-right: 30px;
+    text-align: center;
+
+}
+.topo .esquerda{
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+.topo .centro{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.topo .direita{
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+.imagem{
+    text-align: center;
+    width: 80%;
+}
+
+.conteudo-inferior{
+    width: 90%;
+    float: right;
+    padding: 2%;
+    background:rgb(83, 171, 145);
+    margin-right: 40px;
+    margin-top: 40px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'verdana', 'arial';
+    background-color: rgb(206, 252, 226);
+}
+
+.menu li a{
+    display: block;
+    color: #014605;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-bottom: #2ca879;
+    border-bottom: 1px solid #01462c;
+}
+
+.menu li a.active {
+    background-color: #2ca879;
+    color: white;
+}
+
+
+.menu li a:hover:not(.active){
+    background-color: rgb(0, 102, 68);
+    color: white;
+}
+
+.exemploTable{
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+}
+
+.exemploTable td, .exemploTable th {
+    border: 1px solid #000;
+    padding: 2%;
+    text-align: center;
+}
+
+.exemploTable tr:nth-child(even){
+    background-color: #165f43;
+
+}
+
+.exemploTable tr:hover{
+    background-color: #014635;
+}
+
+.exemploTable th{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #32c78e;
+    color: aliceblue;
+}
