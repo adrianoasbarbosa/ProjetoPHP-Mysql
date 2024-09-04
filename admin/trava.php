@@ -16,4 +16,3 @@ if (isset($_SESSION['start_login']) && (time() - $_SESSION['start_login'] > 3000
 }
 
 $_SESSION['start_login'] = time();
-

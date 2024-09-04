@@ -26,6 +26,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= $caminho ?>graficoZika">Gráfico Zika</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= $caminho ?>passageiroPaginacao">Passageiros Paginação</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= $caminho ?>onibusPaginacao">Ônibus Paginação</a>
+            </li>
         </ul>
     </div>
 </nav>
