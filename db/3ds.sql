@@ -264,6 +264,36 @@ CREATE TABLE `view_produto` (
 );
 
 -- --------------------------------------------------------
+CREATE TABLE passageiro (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cpf VARCHAR(14) NOT NULL
+);
+
+DELIMITER $$
+
+CREATE PROCEDURE listar_passageiro(IN p_id INT)
+BEGIN
+    SELECT * FROM passageiro WHERE id = p_id;
+END$$
+
+CREATE PROCEDURE crud_passageiro(
+    IN p_id INT,
+    IN p_nome VARCHAR(255),
+    IN p_cpf VARCHAR(14),
+    IN p_opcao INT
+)
+BEGIN
+    IF p_opcao = 1 THEN
+        INSERT INTO passageiro(nome, cpf) VALUES (p_nome, p_cpf);
+    ELSEIF p_opcao = 2 THEN
+        UPDATE passageiro SET nome = p_nome, cpf = p_cpf WHERE id = p_id;
+    ELSEIF p_opcao = 3 THEN
+        DELETE FROM passageiro WHERE id = p_id;
+    END IF;
+END$$
+
+DELIMITER ;
 
 --
 -- Estrutura para vista `view_contar_aluno`

@@ -18,7 +18,7 @@
 
         if (!empty($dados)) {
             foreach ($dados as $mostrar) {
-                ?>
+        ?>
                 <tr>
                     <th scope="row"><?= $mostrar['id'] ?></th>
                     <td><?= $mostrar['nome_equipe'] ?></td>
@@ -31,8 +31,8 @@
                             <i class="bi bi-trash"></i>
                         </a>
                     </td>
-                </tr> 
-                <?php
+                </tr>
+        <?php
             }
         }
         ?>

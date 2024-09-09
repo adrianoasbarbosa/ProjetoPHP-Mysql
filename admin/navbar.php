@@ -7,7 +7,7 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="?p=home">Página Inicial</a>
-            </li>            
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="?p=categoria/listar">Categoria</a>
             </li>
